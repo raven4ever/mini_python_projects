@@ -1,7 +1,6 @@
-from PyPDF2 import PdfFileMerger
 import sys
 
-inputs = sys.argv[1:]
+from PyPDF2 import PdfFileMerger
 
 
 def pdf_combiner(file_list):
@@ -13,5 +12,7 @@ def pdf_combiner(file_list):
 
     merger.write('super_pdf.pdf')
 
+
+inputs = sys.argv[1:]
 
 pdf_combiner(inputs)
